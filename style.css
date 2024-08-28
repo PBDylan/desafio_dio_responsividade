@@ -5,6 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 428px) {
+    header {
+        background-color: aqua;
+        background-image: url('./assets/images/Header\ Background.png');
+    }
 }
 
 /* Estilos para o cabeçalho */
@@ -26,13 +34,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: antiquewhite; /* Cor de fundo para distinguir visualmente */
 }
 
 /* Imagem dentro da primeira seção */
 .secone img {
     max-width: 100%;
     height: auto;
+}
+
+header h1, header p, header button {
+    position: relative;
+    top: 100px;
 }
 
 /* Estilos para a segunda seção */
@@ -100,20 +112,72 @@ header {
 }
 
 .sectree {
+    position: relative;
+    top: 94px;
     height: 448px;
     display: flex;
     justify-content: center;
 }
 
 .sectree strong {
+    position: relative;
+    top: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     font-weight: 800px;
 }
 
 .sectree p {
+    position: relative;
+    top: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    font: 400px;
+    font-weight: 400;
 }
 
+.secfour {
+    position: relative;
+    top: 184px;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(246, 246, 246, 1);
+    overflow: hidden; 
+}
+
+.secfour h1 {
+    font-family: Luckiest Guy;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+.secfour p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.secfour img {
+    display: block; /* Define a imagem como bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 134px;
+    position: relative;
+    top: 184px;
+    background-color: rgba(35, 39, 42, 1);
+    overflow: hidden;
+}
+
+footer img {
+    position: relative;
+    top: 35px;
+    width: 230px;
+    height: 63px;
+}
